@@ -1,1 +1,196 @@
 @import "./bootstrap-overrides";
+
+nav {
+  .navbar-toggler:focus {
+    box-shadow: 1px 1px 4px 0 $secondary;
+  }
+}
+
+main {
+  section#topbar {
+    div {
+      div {
+        max-height: 1.7rem;
+      }
+    }
+    .btn {
+      padding-inline: 0.4rem;
+    }
+    .dropdown-toggle {
+      &:after {
+        margin-left: 1.5rem;
+      }
+    }
+  }
+}
+
+// CARD ANIMATIONS
+
+main {
+  section {
+    div.card {
+      @media (min-width: 768px) {
+        transition: all 500ms;
+        &:hover {
+          cursor: pointer;
+          scale: 1.7;
+          z-index: 9000;
+          transition: 1s;
+          box-shadow: multipleBorders($border-colors);
+          & img:hover {
+            box-shadow: 0 0 15px red;
+            transition: all 1.5s ease-out 400ms;
+          }
+        }
+      }
+    }
+  }
+}
+
+//
+
+main {
+  section#profile {
+    h1 {
+      font-size: 2.2rem;
+      & + hr {
+        margin-top: 0.2rem;
+        margin-bottom: 1.2rem;
+      }
+
+      @media (min-width: 576px) {
+        font-size: 3rem;
+      }
+    }
+
+    .dropdown-toggle {
+      &:after {
+        margin-left: 1.5rem;
+      }
+    }
+    a {
+      letter-spacing: 0.1rem;
+    }
+    .form-check-input {
+      background-color: transparent;
+      border-color: $secondary;
+      border-radius: 0;
+      width: 1.9rem;
+      height: 1.3rem;
+
+      @media (min-width: 365px) {
+        width: 1.6rem;
+        height: 1.3rem;
+      }
+
+      @media (min-width: 450px) {
+        width: 1.7rem;
+        height: 1.7rem;
+      }
+    }
+  }
+}
+
+main {
+  section#settings {
+    button {
+      background-color: #eee;
+      @media (min-width: 768px) {
+        position: absolute;
+      }
+    }
+    hr {
+      margin-block: 0.5rem;
+    }
+  }
+}
+
+.dropdown-item:active {
+  background-color: $danger;
+  color: $white !important;
+}
+
+footer {
+  p {
+    font-size: 0.6rem;
+  }
+  i {
+    font-size: 1.6rem;
+  }
+}
+
+// CAROUSELS
+
+@media (max-width: 300px) {
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+.carousel-inner .carousel-item-end.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(75%);
+}
+
+.carousel-inner .carousel-item-start.active,
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-75%);
+}
+
+@media (min-width: 576px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(50%);
+  }
+
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(15%);
+  }
+
+  .carousel-inner .carousel-item-start.active,
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-15%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
+
+.card {
+  border: none;
+}
+
+body {
+  overflow-x: hidden;
+}

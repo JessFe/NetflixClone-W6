@@ -4,26 +4,33 @@
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../bootstrap/scss/functions";
 
+// ref CARD ANIMATION
+@function multipleBorders($colors) {
+  $val: null;
+
+  @for $i from 1 through length($colors) {
+    $val: $val, 0 0 0 #{$i * 1.5}px nth($colors, $i);
+  }
+
+  @return $val;
+}
+
 // 2. Include any default variable overrides here
 
-$netflixdark: #141414;
+$font-size-base: 0.8rem;
 
-$theme-colors: (
-  "primary": $primary,
-  "secondary": $secondary,
-  "success": $success,
-  "info": $info,
-  "warning": $warning,
-  "danger": $danger,
-  "light": $light,
-  "dark": $dark,
-  "netflixdark": $netflixdark,
-);
+$gradient: linear-gradient(180deg, rgba(#000, 1.2), rgba(#000, 0));
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../bootstrap/scss/variables";
 
 // 4. Include any default map overrides here
+
+$custom-colors: (
+  "darkNetflix": #171717,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
 
 // 5. Include remainder of required parts
 @import "../bootstrap/scss/maps";
@@ -53,26 +60,30 @@ $theme-colors: (
 @import "../bootstrap/scss/forms";
 @import "../bootstrap/scss/buttons";
 @import "../bootstrap/scss/dropdown";
-@import "../bootstrap/scss/button-group";
+// @import "../bootstrap/scss/button-group";
 @import "../bootstrap/scss/card";
 @import "../bootstrap/scss/pagination";
-@import "../bootstrap/scss/popover";
+// @import "../bootstrap/scss/popover";
 @import "../bootstrap/scss/carousel";
-@import "../bootstrap/scss/placeholders";
+// @import "../bootstrap/scss/placeholders";
 
-nav {
-  font-size: 0.8rem;
-  i {
-    font-size: 1rem;
-  }
-}
+// @import "../bootstrap/scss/tables";
+@import "../bootstrap/scss/transitions";
+// @import "../bootstrap/scss/accordion";
+// @import "../bootstrap/scss/breadcrumb";
+// @import "../bootstrap/scss/badge";
+// @import "../bootstrap/scss/alert";
+// @import "../bootstrap/scss/progress";
+// @import "../bootstrap/scss/list-group";
+// @import "../bootstrap/scss/close";
+// @import "../bootstrap/scss/toasts";
+// @import "../bootstrap/scss/modal";
+// @import "../bootstrap/scss/tooltip";
+// @import "../bootstrap/scss/spinners";
+// @import "../bootstrap/scss/offcanvas";
 
-footer {
-  font-size: 0.7rem !important;
-  p {
-    font-size: 0.6rem;
-  }
-  i {
-    font-size: 1.6rem;
-  }
-}
+// ref CARD ANIMATIONS
+
+$border-colors: #171717ff, #171717ff, #171717ff, #171717ff, #171717ff, #171717ee, #171717dd, #171717cc, #171717bb,
+  #171717aa, #17171799, #17171788, #17171777, #17171766, #17171755, #17171755, #17171744, #17171744, #17171733,
+  #17171733, #17171722, #17171722, #17171711;

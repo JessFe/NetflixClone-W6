@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings - Netflix</title>
+    <meta
+      content="Watch Netflix movies &amp; TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more."
+      name="description"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./assets/dist/css/style.min.css" />
+  </head>
+  <body>
+    <!-------   NAVBAR   ------->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-darkNetflix text-light">
+      <div class="container-fluid px-4 mx-3 mx-sm-auto">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./assets/netflix_logo2.png" alt="netflix logo" width="80" height="35" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">TV Shows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Recently Added</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My List</a>
+            </li>
+            <div class="d-lg-none">
+              <hr class="my-1" />
+              <li class="nav-item">
+                <a class="nav-link" href="#">Search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#">Kids</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link link-danger" href="./profile.html">Profile</a>
+              </li>
+            </div>
+          </ul>
+
+          <div class="d-flex align-items-center d-none d-lg-flex">
+            <i class="bi bi-search fs-5 ms-3" role="button"></i>
+            <a class="nav-link text-uppercase ms-3" href="#">Kids</a>
+            <span class="nav-item dropdown ms-3">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="./assets/avatar.png" alt="avatar" width="30" />
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end bg-darkNetflix border-secondary">
+                <li><a class="dropdown-item link-danger" href="./profile.html">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item link-danger" href="#">Settings</a></li>
+                <li><hr class="dropdown-divider text-bg-secondary" /></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-------   / NAVBAR   ------->
+    <main class="container-fluid container-lg my-4">
+      <section id="settings">
+        <!-------   DIVISIONE ESTERNA   ------->
+        <div class="row">
+          <div class="col"></div>
+          <div class="col-10 col-lg-10 col-xl-8">
+            <h1>Account</h1>
+            <hr />
+            <!-------   MEMBERSHIP AREA   ------->
+            <div class="row mt-3 mb-3">
+              <div class="col-12 col-md-3 col-lg-4 col-xxl-3">
+                <div class="d-flex d-md-inline-block justify-content-between mb-2 mb-md-0">
+                  <h2 class="text-secondary text-uppercase fs-5 fw-normal">Membership &amp; Billing</h2>
+                  <button
+                    class="btn rounded-0 d-none d-sm-inline-block px-2 py-0 py-md-2 px-md-3 px-lg-4"
+                    id="runaway-btn"
+                  >
+                    Cancel Membership
+                  </button>
+                  <a class="d-inline-block d-sm-none page-link link-danger text-end fs-6" href="#">X cancel</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-9 col-lg-8 col-xxl-9">
+                <!-------   PERSONAL   ------->
+                <div class="row">
+                  <div class="col-6">
+                    <div>
+                      <p class="fw-bold mb-1">student@strive.school</p>
+                      <p class="text-secondary mb-1">Password: ********</p>
+                      <p class="text-secondary mb-0">Phone: 321 044 1279</p>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="text-end">
+                      <ul class="list-unstyled mb-0">
+                        <li><a class="page-link link-info mb-1" href="#">Change account email</a></li>
+                        <li><a class="page-link link-info mb-1" href="#">Change password</a></li>
+                        <li><a class="page-link link-info" href="#">Change phone number</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <!-------   PAYMENT   ------->
+                <div class="row">
+                  <div class="col-6">
+                    <div>
+                      <i class="bi bi-paypal"></i>
+                      <p class="fst-italic fw-bold d-inline">Paypal</p>
+                      <p class="fw-bold d-inline ps-2">admin@strive.school</p>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="text-end">
+                      <ul class="list-unstyled mb-0">
+                        <li><a class="page-link link-info mb-1" href="#">Update payment info</a></li>
+                        <li><a class="page-link link-info" href="#">Billing details</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <hr />
+                <!-------   GIFT   ------->
+                <div class="row">
+                  <div class="col-6"></div>
+                  <div class="col-6">
+                    <div class="text-end">
+                      <ul class="list-unstyled mb-0">
+                        <li><a class="page-link link-info mb-1" href="#">Redeem gift card or promo code</a></li>
+                        <li><a class="page-link link-info" href="#">Where to buy gift cards</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <!-------   / MEMBERSHIP AREA   ------->
+            <!-------   PLAN AREA   ------->
+            <div class="row mt-3">
+              <div class="col-12 col-md-3 col-lg-4 col-xxl-3">
+                <div class="mb-3 mb-md-0">
+                  <h2 class="text-secondary text-uppercase fs-5 fw-normal">Plan details</h2>
+                </div>
+              </div>
+              <div class="col-12 col-md-9 col-lg-8 col-xxl-9">
+                <!-------   PLAN   ------->
+                <div class="row">
+                  <div class="col-6">
+                    <div>
+                      <p class="fw-bold d-inline pe-2">Premium</p>
+                      <img src="./assets/ultrahd.jpg" alt="ultra hd" width="90" />
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="text-end">
+                      <a class="page-link link-info" href="#">Change plan</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <!-------   / PLAN AREA   ------->
+            <!-------   SETTINGS AREA   ------->
+            <div class="row mt-3">
+              <div class="col-12 col-md-3 col-lg-4 col-xxl-3">
+                <div class="mb-3 mb-md-0">
+                  <h2 class="text-secondary text-uppercase fs-5 fw-normal">Settings</h2>
+                </div>
+              </div>
+              <div class="col-12 col-md-9 col-lg-8 col-xxl-9">
+                <!-------   SETTINGS   ------->
+                <div class="row">
+                  <div class="col-6">
+                    <div>
+                      <ul class="list-unstyled mb-0">
+                        <li><a class="page-link link-info mb-1" href="#">Parental controls</a></li>
+                        <li><a class="page-link link-info mb-1" href="#">Test partecipation</a></li>
+                        <li><a class="page-link link-info mb-1" href="#">Manage download devices</a></li>
+                        <li><a class="page-link link-info mb-1" href="#">Activate a device</a></li>
+                        <li><a class="page-link link-info mb-1" href="#">Recent device streaming activity</a></li>
+                        <li><a class="page-link link-info" href="#">Sign out of all devices</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-6"></div>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <!-------   / SETTINGS AREA   ------->
+            <!-------   PROFILE AREA   ------->
+            <div class="row mt-3">
+              <div class="col-12 col-md-3 col-lg-4 col-xxl-3">
+                <div class="mb-3 mb-md-0">
+                  <h2 class="text-secondary text-uppercase fs-5 fw-normal">My profile</h2>
+                </div>
+              </div>
+              <div class="col-12 col-md-9 col-lg-8 col-xxl-9">
+                <!-------   STATUS   ------->
+                <div class="row">
+                  <div class="col-12 col-sm">
+                    <div>
+                      <img class="pe-2" src="./assets/avatar.png" alt="avatar" width="30" />
+                      <p class="d-inline fw-bold text-nowrap">Strive Student</p>
+                      <ul class="list-unstyled mt-3">
+                        <li><a class="page-link link-info mb-1" href="#">Language</a></li>
+                        <li><a class="page-link link-info mb-1" href="#">Playback settings</a></li>
+                        <li><a class="page-link link-info mb-1" href="#">Subtitle appearance</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-2 col-lg-3"></div>
+                  <div class="col-12 col-sm align-self-center">
+                    <div>
+                      <ul class="list-unstyled mb-0">
+                        <li><a class="page-link link-info mb-1" href="#">Viewing activity</a></li>
+                        <li><a class="page-link link-info mb-1" href="#">Ratings</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm">
+                    <div class="text-end">
+                      <ul class="list-unstyled mb-0">
+                        <li><a class="page-link link-info mb-1" href="#">Manage profiles</a></li>
+                        <li><a class="page-link link-info mb-1" href="#">Add profile email</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-------   / PROFILE AREA   ------->
+          </div>
+          <div class="col"></div>
+        </div>
+        <!-------   / DIVISIONE ESTERNA   ------->
+      </section>
+    </main>
+    <aside>
+      <p class="text-center bg-light text-danger fw-bold mt-5">--- Click on "Cancel Membership" if you dare 😈 ---</p>
+    </aside>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+      const button = document.getElementById("runaway-btn");
+
+      const animateMove = (element, prop, pixels) =>
+        anime({
+          targets: element,
+          [prop]: `${pixels}px`,
+          easing: "easeOutCirc",
+        });
+
+      ["mouseover", "click"].forEach(function (el) {
+        button.addEventListener(el, function (event) {
+          const top = getRandomNumber(window.innerHeight - this.offsetHeight);
+          const left = getRandomNumber(window.innerWidth - this.offsetWidth);
+
+          animateMove(this, "left", left).play();
+          animateMove(this, "top", top).play();
+        });
+      });
+
+      const getRandomNumber = (num) => {
+        return Math.floor(Math.random() * (num + 1));
+      };
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
