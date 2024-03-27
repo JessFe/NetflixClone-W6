@@ -21,3 +21,5 @@ By carefully studying Netflix's own design and detailed mockups, I made sure thi
 <summary>Project's gallery: Mobile - Click here!</summary>
 <img src="/preview/04.png" height="450"> <img src="/preview/05.png" height="450"> <img src="/preview/06.png" height="450">
 </details>
+<video src="/preview/2023-12-02-21-12-22.mp4" width="300" />
+
